@@ -1,0 +1,34 @@
+a {
+  font-weight: 500;
+  color: #dfcc6f;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #d2508f;
+}
+
+h1,
+h2 {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 15, "SHLN" 50;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  padding: 0;
+  margin-inline: 0;
+  margin-block: 10px;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
