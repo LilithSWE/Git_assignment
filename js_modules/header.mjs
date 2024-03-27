@@ -1,4 +1,5 @@
 import homepage from "./homepage.mjs"
+import gallery from "./gallery.mjs"
 
 export default function header() {
 
@@ -33,11 +34,12 @@ function addEventListerners() {
     header();
   })
 
-  productsBtn.addEventListener('click', () => {
+  galleryBtn.addEventListener('click', () => {
+    gallery()
     header();
   })
 
-  galleryBtn.addEventListener('click', () => {
+  productsBtn.addEventListener('click', () => {
     header();
   })
 
