@@ -32,34 +32,36 @@ main {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 30px;
   .homeText {
     width: 50%;
   }
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  .item {
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  .item img {
-    max-width: 100%;
+}
+
+.post {
+  border: 3px solid #828483;
+  border-radius: 10px;
+  padding: 10px;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  img {
     height: auto;
+    width: 80%;
+    border: 3px solid #828483;
+    border-radius: 40px;
+    align-self: center;
+    margin: 10px;
   }
-  .headline {
-    font-weight: bold;
-  }
-  .date {
-    font-style: italic;
-    color: #888;
-  }
-  .content {
-    margin-top: 10px;
+  .titleAndDateContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 10px;
   }
 }

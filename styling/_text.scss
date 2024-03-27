@@ -32,3 +32,20 @@ h2 {
 p {
   font-size: 1.2rem;
 }
+
+.titleAndDateContainer {
+  .headline {
+    font-size: 3rem;
+    margin: 0;
+    color: black;
+    text-shadow: 1px 1px #d2508f, -1px -1px #dfcc6f;
+  }
+  .date {
+    font-style: italic;
+    color: #828483;
+  }
+}
+
+.imgtext {
+  margin: 0px 45px 20px 45px;
+}
