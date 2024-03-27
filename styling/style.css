@@ -182,35 +182,37 @@ main {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 30px;
 }
 main .homeText {
   width: 50%;
 }
-main .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-}
-main .item {
-  border: 1px solid #ccc;
+.post {
+  border: 3px solid #828483;
+  border-radius: 10px;
   padding: 10px;
-}
-main .item img {
-  max-width: 100%;
+  width: 90%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
-main .headline {
-  font-weight: bold;
+.post img {
+  height: auto;
+  width: 80%;
+  border: 3px solid #828483;
+  border-radius: 40px;
+  align-self: center;
+  margin: 10px;
 }
-main .date {
-  font-style: italic;
-  color: #888;
-}
-main .content {
-  margin-top: 10px;
+.post .titleAndDateContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  margin-bottom: 10px;
 }
 button {
   border: 2px solid rgba(0, 0, 0, 0);
@@ -261,6 +263,19 @@ h2 {
 }
 p {
   font-size: 1.2rem;
+}
+.titleAndDateContainer .headline {
+  font-size: 3rem;
+  margin: 0;
+  color: #000;
+  text-shadow: 1px 1px #d2508f, -1px -1px #dfcc6f;
+}
+.titleAndDateContainer .date {
+  font-style: italic;
+  color: #828483;
+}
+.imgtext {
+  margin: 0px 45px 20px 45px;
 }
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
