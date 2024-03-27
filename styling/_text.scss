@@ -18,11 +18,11 @@ h2 {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1.1;
   padding: 0;
   margin-inline: 0;
-  margin-block: 10px;
+  margin-block: 5px;
 }
 
 h2 {
@@ -48,4 +48,10 @@ p {
 
 .imgtext {
   margin: 0px 45px 20px 45px;
+}
+
+footer {
+  p {
+    font-size: 0.8rem;
+  }
 }

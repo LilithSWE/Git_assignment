@@ -10,14 +10,17 @@ body {
 header {
   width: 100%;
   min-height: 100px;
-  height: auto;
+  height: 150px;
   padding: 0;
   margin: 0;
   text-align: center;
-  position: sticky;
+  position: fixed;
   border-bottom: 3px solid #828483;
+  background-color: #242424;
   .navBtns {
-    padding-bottom: 20px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
   }
 }
 
@@ -25,7 +28,7 @@ main {
   width: 95%;
   min-width: 320px;
   margin: 0;
-  margin-top: 50px;
+  margin-top: 170px;
   padding: 1rem;
   text-align: center;
   border: 3px solid #828483;
@@ -33,9 +36,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
   .homeText {
-    width: 50%;
+    width: 70%;
+    p {
+      margin-block: 10px;
+    }
   }
 }
 
@@ -43,40 +48,14 @@ main {
   border: 3px solid #828483;
   border-radius: 10px;
   padding: 10px;
-  width: 90%;
+  width: 85%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;
-  img {
-    height: auto;
-    width: 80%;
-    border: 3px solid #828483;
-    border-radius: 40px;
-    align-self: center;
-    margin: 10px;
-  }
-  .titleAndDateContainer {
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    margin-bottom: 10px;
-  }
-}
-
-.post {
-  border: 3px solid #828483;
-  border-radius: 10px;
-  padding: 10px;
-  width: 90%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
+  margin-bottom: 30px;
   img {
     height: auto;
     width: 80%;

@@ -10,7 +10,6 @@ export default function header() {
   <div class="navBtns">
     <button id="homeBtn">Home</button>
     <button id="galleryBtn">Gallery</button>
-    <button id="productsBtn">Products</button>
     <button id="aboutBtn">About Me</button>
   </div>`
 
@@ -21,7 +20,6 @@ function addEventListerners() {
   const title = document.querySelector('h1')
   const homeBtn = document.getElementById('homeBtn')
   const galleryBtn = document.getElementById('galleryBtn')
-  const productsBtn = document.getElementById('productsBtn')
   const aboutBtn = document.getElementById('aboutBtn')
 
   title.addEventListener('click', () => {
@@ -36,10 +34,6 @@ function addEventListerners() {
 
   galleryBtn.addEventListener('click', () => {
     gallery()
-    header();
-  })
-
-  productsBtn.addEventListener('click', () => {
     header();
   })
 
