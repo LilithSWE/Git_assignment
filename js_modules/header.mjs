@@ -1,3 +1,4 @@
+import homepage from "./homepage.mjs"
 
 export default function header() {
 
@@ -10,6 +11,38 @@ export default function header() {
     <button id="galleryBtn">Gallery</button>
     <button id="productsBtn">Products</button>
     <button id="aboutBtn">About Me</button>
-  </div>
-  `
+  </div>`
+
+  addEventListerners()
+}
+
+function addEventListerners() {
+  const title = document.querySelector('h1')
+  const homeBtn = document.getElementById('homeBtn')
+  const galleryBtn = document.getElementById('galleryBtn')
+  const productsBtn = document.getElementById('productsBtn')
+  const aboutBtn = document.getElementById('aboutBtn')
+
+  title.addEventListener('click', () => {
+    homepage();
+    header();
+  })
+
+  homeBtn.addEventListener('click', () => {
+    homepage();
+    header();
+  })
+
+  productsBtn.addEventListener('click', () => {
+    header();
+  })
+
+  galleryBtn.addEventListener('click', () => {
+    header();
+  })
+
+  aboutBtn.addEventListener('click', () => {
+    header();
+  })
+
 }
