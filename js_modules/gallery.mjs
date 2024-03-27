@@ -8,8 +8,7 @@ export default function gallery() {
   I hope you like them! You can find more of these at my hobby instagram  
   <a href="https://www.instagram.com/amandasminiatures/">@amandasminatures</a>. 
   Hope to see you there as well!</p>
-  `
-
+  <div class ="gallery">`
   imageArray.forEach(image => {
     main.innerHTML += `
      <div class="item">
@@ -22,4 +21,5 @@ export default function gallery() {
       </div>
     `
   });
+  main.innerHTML += `</div>`
 }

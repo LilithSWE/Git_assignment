@@ -37,6 +37,29 @@ main {
   .homeText {
     width: 50%;
   }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .item {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .item img {
+    max-width: 100%;
+    height: auto;
+  }
+  .headline {
+    font-weight: bold;
+  }
+  .date {
+    font-style: italic;
+    color: #888;
+  }
+  .content {
+    margin-top: 10px;
+  }
 }
 
 .post {
