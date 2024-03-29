@@ -1,5 +1,6 @@
 import homepage from "./homepage.mjs"
 import gallery from "./gallery.mjs"
+import aboutMe from "./aboutMe.mjs"
 
 export default function header() {
 
@@ -38,6 +39,7 @@ function addEventListerners() {
   })
 
   aboutBtn.addEventListener('click', () => {
+    aboutMe();
     header();
   })
 
