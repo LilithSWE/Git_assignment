@@ -7,4 +7,5 @@ export default function aboutMe() {
   I wouldn't say I paint as regularly as I perhaps should, but I do enjoy painting with friends from time to time. 
   Recently I have joined up in a painting club in Gothenburg on Mondays, so I'm bound to increase the time spent painting going forward!</p>
   <p> You can find more of my work at: <a href="https://www.instagram.com/amandasminiatures/">@amandasminatures</a>.</p>`
+
 }
