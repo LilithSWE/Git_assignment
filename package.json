@@ -2,13 +2,17 @@
   "name": "min-hobby-git",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://lilithswe.github.io/Git_assignment/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "vite": "^5.2.0"
   }
 }
