@@ -2,7 +2,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  place-items: center;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -15,7 +15,9 @@ header {
   margin: 0;
   text-align: center;
   position: fixed;
-  border-bottom: 3px solid #828483;
+  border: 3px solid #828483;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   background-color: #242424;
   .navBtns {
     display: flex;
@@ -31,7 +33,6 @@ main {
   margin-top: 170px;
   padding: 1rem;
   text-align: center;
-  border: 3px solid #828483;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -44,30 +45,58 @@ main {
   }
 }
 
-.post {
-  border: 3px solid #828483;
-  border-radius: 10px;
-  padding: 10px;
-  width: 85%;
-  height: auto;
+.gallery {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
   align-items: center;
-  gap: 5px;
-  margin-bottom: 30px;
-  img {
-    height: auto;
-    width: 80%;
-    border: 3px solid #828483;
-    border-radius: 40px;
-    align-self: center;
-    margin: 10px;
+  justify-content: center;
+  .post {
+    background-color: #eaf2ee29;
+    border: 5px solid #d2508f2a;
+    border-radius: 10px;
+    padding: 10px;
+    width: 450px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 4fr;
+    justify-items: center;
+    align-items: start;
+    gap: 10px;
+    overflow-y: auto;
+    img {
+      height: auto;
+      width: 95%;
+      border: 3px solid #dfcc6f50;
+      border-radius: 40px;
+      align-self: center;
+      margin: 10px;
+    }
+    .titleAndDateContainer {
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+    }
+    p {
+      align-self: top;
+    }
   }
-  .titleAndDateContainer {
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    margin-bottom: 10px;
-  }
+}
+
+div.post::-webkit-scrollbar-track {
+  background: rgba(223, 204, 111, 0);
+  max-height: 10px;
+}
+div.post::-webkit-scrollbar-thumb {
+  background: #dfcc6f50;
+  border-radius: 10px;
+}
+
+div.post::-webkit-scrollbar-corner {
+  background: rgba(223, 204, 111, 0);
+  max-height: 10px;
+}
+div.post::-webkit-scrollbar {
+  width: 8px;
 }
